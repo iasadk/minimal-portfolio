@@ -11,8 +11,8 @@ import {
 } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
+import { IoIosDocument } from "react-icons/io";
 import { SiGithub } from "react-icons/si";
-
 const iconsMap = {
   github: SiGithub,
   linkedin: BsLinkedin,
@@ -22,6 +22,7 @@ const iconsMap = {
   envelope: AiOutlineMail,
   whatsapp: AiOutlineWhatsApp,
   facebook: FaFacebook,
+  resume: IoIosDocument
 };
 
 function HeroSocialLinks() {
@@ -44,9 +45,7 @@ function HeroSocialLinks() {
         <div className="mt-4 w-full max-w-2xl mx-auto">
           <div className="flex flex-wrap justify-start gap-4">
             {socialLinks.map((social) => {
-              const IconComponent =
-                iconsMap[social.icon.toLowerCase() as keyof typeof iconsMap];
-
+              const IconComponent = iconsMap[social.icon.toLowerCase() as keyof typeof iconsMap];
               return (
                 <a
                   key={social._id}

@@ -77,6 +77,17 @@ const mockSocialLinks: SocialLink[] = [
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   },
+  {
+    _id: "6",
+    platform: "Resume",
+    url: "https://iasadk.vercel.app/resume.pdf",
+    icon: "resume",
+    iconLibrary: "fontawesome",
+    isActive: true,
+    order: 6,
+    createdAt: new Date().toISOString(),
+    updatedAt: new Date().toISOString(),
+  },
 ];
 
 export function useSocialLinks(activeOnly: boolean = true): UseSocialLinksReturn {

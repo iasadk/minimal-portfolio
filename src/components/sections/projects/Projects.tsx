@@ -414,13 +414,13 @@ const Projects = () => {
       {/* ==== BEGIN: Explore More on GitHub ==== */}
       <div className="px-4 py-6 flex justify-center">
         <a
-          href="https://github.com/balshaer"
+          href="https://iasadk.vercel.app/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="font-bold text-lg underline"
           style={{ color: "var(--link-color)" }}
         >
-          Explore more on GitHub
+          Download Resume for more
         </a>
       </div>
       {/* ==== END: Explore More on GitHub ==== */}
